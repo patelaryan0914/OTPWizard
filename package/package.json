@@ -1,0 +1,24 @@
+{
+  "name": "otpwizard",
+  "version": "1.0.0",
+  "description": "OTPWizard is a versatile npm package for generating and verifying one-time passwords, offering customizable options for length and delivery methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "a",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aryanop0914/OTPWizard.git"
+  },
+  "keywords": [
+    "Otp Genrate",
+    "Mail",
+    "SMS"
+  ],
+  "author": "Aryan Patel, Dhruv Patel",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.10"
+  }
+}
