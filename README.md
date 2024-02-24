@@ -15,7 +15,7 @@ npm install otpwizard
 ## Usage
 
 ```javascript
-const otpEmailSender = require('otpwizard');
+const otpwizard = require('otpwizard');
 
 // Example usage of generating OTP and sending email
 const recipientEmail = 'recipient@example.com';
