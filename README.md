@@ -9,22 +9,33 @@ This npm module provides functions to generate one-time passwords (OTPs) and sen
 To install the OTP Email Sender module, run the following command:
 
 ```bash
-npm install otpwizard
+npm install otp-email-sender
 ```
 
 ## Usage
 
 ```javascript
-const otpEmailSender = require("otpwizard");
+const otpEmailSender = require('otp-email-sender');
 
 // Example usage of generating OTP and sending email
-const recipientEmail = "recipient@example.com";
+const recipientEmail = 'recipient@example.com';
 const htmlTemplate = (otp) => `
   <p>Your OTP is: <strong>${otp}</strong></p>
   <p>This OTP is valid for a limited time. Please do not share it with anyone.</p>
 `;
 otpEmailSender.sendEmail(6, recipientEmail, htmlTemplate);
 ```
+
+## Configuration
+
+Before using the OTP Email Sender module, ensure that you have created a `.env` file in the root directory of your project with the following environment variables:
+
+```
+GMAIL_USER=your-email@gmail.com
+GMAIL_PASS=your-gmail-password
+```
+
+Make sure to replace `your-email@gmail.com` and `your-gmail-password` with your actual Gmail username and password. These credentials will be used to authenticate with the Gmail SMTP server for sending emails.
 
 ## Functions
 
