@@ -1,6 +1,6 @@
 ---
 
-# OTP Email Sender
+# OTP Wizard
 
 This npm module provides functions to generate one-time passwords (OTPs) and send them via email using Nodemailer.
 
