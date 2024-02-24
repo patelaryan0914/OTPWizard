@@ -9,13 +9,13 @@ This npm module provides functions to generate one-time passwords (OTPs) and sen
 To install the OTP Email Sender module, run the following command:
 
 ```bash
-npm install otp-email-sender
+npm install otpwizard
 ```
 
 ## Usage
 
 ```javascript
-const otpEmailSender = require("otp-email-sender");
+const otpEmailSender = require("otpwizard");
 
 // Example usage of generating OTP and sending email
 const recipientEmail = "recipient@example.com";
