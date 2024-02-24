@@ -56,4 +56,11 @@ Verifies whether the provided OTP matches the expected OTP.
 
 Returns `true` if the provided OTP matches the expected OTP, otherwise returns `false`.
 
+##Testing
+For testing the functionality of otpwizard, you can use the provided backend test repository. This repository includes endpoints for sending OTP emails and verifying OTPs, providing a comprehensive testing environment for the package.
+
+Check out the test repository here: [OTPWizard Backend Test Repo](https://github.com/Aryanop0914/OTPwizard-BackendTest)
+
+##Contributing
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 ---
