@@ -1,6 +1,6 @@
 {
   "name": "otpwizard",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "OTPWizard is a versatile npm package for generating and verifying one-time passwords, offering customizable options for length and delivery methods",
   "main": "index.js",
   "scripts": {

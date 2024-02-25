@@ -23,7 +23,7 @@ const htmlTemplate = (otp) => `
   <p>Your OTP is: <strong>${otp}</strong></p>
   <p>This OTP is valid for a limited time. Please do not share it with anyone.</p>
 `;
-otpEmailSender.sendEmail(6, recipientEmail, htmlTemplate);
+otpwizard.sendEmail(6, recipientEmail, htmlTemplate);
 ```
 
 ## Configuration
