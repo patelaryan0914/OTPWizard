@@ -10,7 +10,7 @@ const generateOTP = (length) => {
   return otp;
 };
 
-const sendEmail = async (otplength, recipient, htmlContent) => {
+const sendEmail = async (otplength, EmailObj) => {
   const otp = generateOTP(otplength);
   const transporter = nodemailer.createTransport({
     service: "Gmail",
@@ -22,9 +22,9 @@ const sendEmail = async (otplength, recipient, htmlContent) => {
 
   const mailOptions = {
     from: process.env.GMAIL_USER,
-    to: recipient,
-    subject: "Your One-Time Password (OTP)",
-    html: htmlContent(otp),
+    to: EmailObj.emailInput,
+    subject: EmailObj.subject,
+    html: EmailObj.htmlContent(otp),
   };
   try {
     await transporter.sendMail(mailOptions);
